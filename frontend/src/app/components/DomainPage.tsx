@@ -101,7 +101,8 @@ export function DomainPage({ domainKey, title, tagline, color, description }: Do
     formData.append('domain', domainKey);
 
     try {
-      const response = await fetch('http://localhost:5000/verify', {
+      const response = await fetch('https://pixeltrust-backend.onrender.com/verify
+', {
         method: 'POST',
         body: formData,
       });
