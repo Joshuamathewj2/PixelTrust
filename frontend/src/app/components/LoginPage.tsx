@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Lock } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 export function LoginPage() {
   const navigate = useNavigate();
@@ -100,7 +101,12 @@ export function LoginPage() {
                   whileHover={{ scale: 1.05, rotate: 5 }}
                   transition={{ type: 'spring', stiffness: 300 }}
                 >
-                  <Lock className="w-8 h-8 text-white" />
+                 <img
+  src={logo}
+  alt="PixelTrust Logo"
+  className="w-9 h-9 object-contain"
+/>
+
                   <motion.div
                     className="absolute inset-0 rounded-full bg-gradient-to-br from-[#b026ff] to-[#7c1cfc] blur-lg opacity-50"
                     animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.3, 0.5] }}
