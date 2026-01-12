@@ -89,12 +89,24 @@ export function LoginPage() {
           {/* Glass background */}
           <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-2xl p-8 md:p-10">
             {/* Logo/Title Section */}
-            <motion.div
-              className="text-center mb-8"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-            >
+          <motion.div
+  className="w-16 h-16 rounded-full bg-gradient-to-br from-[#b026ff] to-[#7c1cfc] flex items-center justify-center mx-auto"
+  whileHover={{ scale: 1.05, rotate: 5 }}
+  transition={{ type: 'spring', stiffness: 300 }}
+>
+  <img
+    src={logo}
+    alt="PixelTrust Logo"
+    className="w-9 h-9 object-contain"
+  />
+
+  <motion.div
+    className="absolute inset-0 rounded-full bg-gradient-to-br from-[#b026ff] to-[#7c1cfc] blur-lg opacity-50"
+    animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.3, 0.5] }}
+    transition={{ duration: 2, repeat: Infinity }}
+  />
+</motion.div>
+
               <div className="inline-block mb-4 relative">
                 <motion.div
                   className="w-16 h-16 rounded-full bg-gradient-to-br from-[#b026ff] to-[#7c1cfc] flex items-center justify-center mx-auto"
