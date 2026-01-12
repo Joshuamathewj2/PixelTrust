@@ -2,4 +2,5 @@ fastapi
 uvicorn
 python-multipart
 flask
+flask-cors
 gunicorn
