@@ -4,6 +4,7 @@
 
 PixelTrust is a web-based image verification system that analyzes images at the **pixel, noise, metadata, and AI-pattern levels** to determine whether an image is **authentic, manipulated, or AI-generated**. It is designed to be **explainable, practical, and accessible**, rather than a black-box detection tool.
 
+🌐 PixelTrust Web App: https://pixel-trust.vercel.app/?ref=producthunt
 ---
 
 ## 🚩 Problem Statement
